@@ -1,0 +1,34 @@
+In this part i will be explaining to-do-list html code 
+
+for better understanding use vs code.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- here i have link my style.css to my html -->
+    
+    <title>TO-DO-LIST</title> <!-- this is title part -->
+</head>
+<body>
+    <div class="container"> <!-- here i have created a container to store whole list -->
+        <div class="TO-DO-App"> <!-- i ave created a class class name is to-do-app -->
+        <h2>TO-DO-LIST <img src="/image/pic1.webp" alt="ADD small image"></h2>  <!-- i have added heading and added small image form web -->
+        <div class="row"> <!-- Now i have created a class name row to input your task -->
+            <input type="text" id="input-box" placeholder="Add your text"> <!-- i have added a input-box there we have to write all the task -->
+            <button onclick="addTask()">Add</button> <!-- here i have added a button that will add our task -->
+        </div>
+        <ul id="list-container"> <!-- Now i have created list container that will contain your all the task -->
+            <!-- <li class="checked">Task1</li>
+            <li>Task2</li>
+            <li>Task3</li>   this is sudo code if you want to check that your list is working or not you can add it or remove this part                -->
+        </ul>
+</div>
+    </div>
+    <script src="javascript.js"></script> <!--here i have linked javascript to my html -->
+    
+</body>
+</html>
