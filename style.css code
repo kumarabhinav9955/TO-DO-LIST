@@ -2,19 +2,56 @@ Here CODE for CSS part you can directly copy paste this.
 rembeber this is not final code we will add more items in this.
 
 
+
 *{
     margin: 0;
     padding:0;
+    
+}
+body{
+    overflow-x:hidden;
+    overflow-y:auto;
+   
 }
 
-.container{ /* this part css is for container  */
+#header {
+    background-color: #06547e; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center; 
+}
+
+
+#header a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+    display: inline-block; 
+    padding: 8px 16px; 
+}
+
+
+#header a:hover {
+    background-color: #8d4b00; 
+    border-radius: 50px;
+    text-decoration: none; 
+}
+#time{
+    font-size:18px;
+    background-color: #570cb9;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#153677, #4e085f);
+    background: #570cb9;
     padding:10px;
 
 }
-.TO-DO-App{   /* This part is for class to-do-app  */
+.TO-DO-App{
     width:100%;
     max-width:540px;
     background: #fff;
@@ -23,7 +60,7 @@ rembeber this is not final code we will add more items in this.
     border-radius: 10px;
 
 }
-.TO-DO-App h2{ /* This part will change the heading that is to-do-app */
+.TO-DO-App h2{
     color: #002765;
     display: flex;
     align-items: center;
@@ -48,6 +85,7 @@ input{
     outline: none;
     background: transparent;
     padding:10px;
+    
 }
 
 button{
@@ -81,8 +119,11 @@ ul li::before{
 }
 
 ul li.checked{
-    color: #555;
-    text-decoration: line-through;
+    
+    color: #f7eaea;
+    text-decoration:dotted;
+    background-color: #9b1111;
+    border-radius: 20px;
 }
 ul li.checked::before{
     background-image: url(image/img3.jpg);
